@@ -44,7 +44,7 @@ jobs:
       run: tox
 
     - name: Upload pytest html report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       if: failure()
       with:
         path: __pytest_reports/dfp-unit-tests.html
